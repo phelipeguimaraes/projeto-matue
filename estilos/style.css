@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fonte1: 'Martian Mono', monospace;
+    --fonte2: 'Permanent Marker', cursive;
+}
+
+header {
+    font-family: var(--fonte1);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+header > h1 {
+    margin-top: 50px;
+    font-size: 7vw;
+}
+
+header p {
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+a {
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 2em;
+    font-size: 3vw;
+    padding-left: 50px;
+    font-variant: small-caps;
+}
+
+section.normal{
+    background-color: white
+}
+
+section.imagem{
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-color: rgba(0, 0, 0, 0.851);
+    color: white;
+    background-attachment: fixed;
+}
+
+section.imagem p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.448);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 5px;
+    
+}
+
+section.imagem#img1 {
+    background-image: url(../img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section.imagem#img2 {
+    background-image: url(../img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    padding-top: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+footer > p {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
